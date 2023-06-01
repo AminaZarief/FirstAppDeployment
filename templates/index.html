@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ML app</title>
+  <h1>Welcome to my IRIS data prediction</h1>
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #e1eaf5, #a7c4e0);
+    }
+  </style>
+  <div class="header">
+    <img src="{{ url_for('static', filename='static/img/IRIS.png') }}" >
+  </div>
+
+</head>
+<body>
+
+  <form action="/" method="POST">
+    <label for="F1">Sepal_length:</label>
+    <input type="text" id="F1" name="F1"><br><br>
+    <label for="F2">Sepal_width:</label>
+    <input type="text" id="F2" name="F2"><br><br>
+    <label for="F3">Petal_length:</label>
+    <input type="text" id="F3" name="F3"><br><br>
+    <label for="F4">Petal_width:</label>
+    <input type="text" id="F4" name="F4"><br><br>
+
+    <input type="submit" value="predict">
+  </form>
+
+  
+  {% if prediction %}
+  <p>prediction is {{ prediction }}!</p>
+  {% endif %}
+
+
+
+</body>
+</html>

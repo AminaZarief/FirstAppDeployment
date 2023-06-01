@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flask App - HTML Template</title>
+</head>
+<body>
+  <h1>Welcome to my Flask App</h1>
+
+  <form action="/sub" method="POST">
+    <label for="F1">Input:</label>
+    <input type="text" id="F1" name="F1"><br><br>
+
+    <label for="F2">Input:</label>
+    <input type="text" id="F2" name="F2"><br><br>
+
+    <input type="submit" value="SUB">
+  </form>
+  {% if result %}
+  <p>the result is, {{ result }}!</p>
+  {% endif %}
+  <p><a href="/add">add</a></p>
+
+  <p><a href="/">Home</a></p>
+
+
+</body>
+</html>

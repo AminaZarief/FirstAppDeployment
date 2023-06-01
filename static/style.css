@@ -1,0 +1,43 @@
+/* Background image */
+.header {
+    background-image: url('/static/img/IRIS.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust the height as needed */
+  }
+  body {
+    background: linear-gradient(to bottom, #e1eaf5, #a7c4e0);
+  }
+  
+  /* Container */
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+  /* Photo container */
+.photo-container {
+    text-align: center;
+  }
+  
+  /* Iris photo */
+  .iris-photo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  .input-field {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+  }
+  
